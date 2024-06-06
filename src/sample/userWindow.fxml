@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="446.0" prefWidth="448.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserWindow">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="448.0" style="-fx-background-color: #2A629A;">
+         <children>
+            <MenuButton fx:id="user_profile" layoutX="333.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: FF7F3E; -fx-background-radius: 50;" text="Профиль" textFill="WHITE">
+               <font>
+                  <Font name="Meiryo UI Bold" size="13.0" />
+               </font>
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <AnchorPane prefHeight="178.0" prefWidth="194.0">
+                           <children>
+                              <Text fx:id="login_user" fill="#ff7f3e" layoutX="97.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Иван">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="age_user" fill="#ff7f3e" fontSmoothingType="LCD" layoutX="117.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="email_user" fill="#ff7f3e" fontSmoothingType="LCD" layoutX="84.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pet@mail.ru">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="26.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="10.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="26.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" wrappingWidth="32.044921875">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="10.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="26.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="42.4449462890625">
+                                 <font>
+                                    <Font name="Meiryo UI Bold" size="10.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </MenuButton>
+            <Button fx:id="exit_user" layoutY="23.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #2A629A;" text="&lt;- Выйти" textFill="WHITE">
+               <font>
+                  <Font name="Meiryo UI Bold" size="10.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="146.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toys" underline="true">
+               <font>
+                  <Font name="Meiryo UI Bold Italic" size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#ff7f3e" layoutX="230.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store">
+               <font>
+                  <Font name="Meiryo UI Bold Italic" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="toys_tab_user" layoutX="18.0" layoutY="136.0" prefHeight="267.0" prefWidth="411.0" style="-fx-background-color: #16fafa; -fx-background-radius: 5;">
+        <columns>
+          <TableColumn fx:id="num_toy_user" prefWidth="38.4000244140625" text="№" />
+          <TableColumn fx:id="name_toy_user" prefWidth="236.79998779296875" text="Название" />
+            <TableColumn fx:id="price_toy_user" minWidth="0.0" prefWidth="134.40001220703124" text="Цена" />
+        </columns>
+      </TableView>
+      <Text fx:id="text" fill="#2a629a" layoutX="167.0" layoutY="113.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Игрушки" wrappingWidth="113.60000000000002">
+         <font>
+            <Font name="Meiryo UI Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="place_an_order" layoutX="316.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: FF7F3E; -fx-background-radius: 50;" text="Оформить заказ" textFill="WHITE">
+         <font>
+            <Font name="Meiryo UI Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

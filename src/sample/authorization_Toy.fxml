@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="290.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Authorization_Toy">
+   <children>
+      <AnchorPane layoutX="132.0" layoutY="351.0" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: 000000;" />
+      <AnchorPane layoutX="-1.0" layoutY="167.0" prefHeight="71.0" prefWidth="291.0" style="-fx-background-color: FF7F3E;">
+         <children>
+            <PasswordField fx:id="auto_passw" alignment="TOP_CENTER" layoutX="62.0" layoutY="38.0" promptText="Password" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Meiryo UI Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="auto_log" alignment="TOP_CENTER" layoutX="62.0" layoutY="8.0" promptText="Login" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Meiryo UI Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Button fx:id="auto_reg_button" layoutX="128.0" layoutY="353.0" mnemonicParsing="false" opacity="0.81" style="-fx-background-color: #ffffff;" text="Зарегистрироваться " textFill="#ff9000">
+         <font>
+            <Font name="Meiryo UI Bold Italic" size="11.0" />
+         </font></Button>
+      <Button fx:id="auto_button" layoutX="117.0" layoutY="260.0" mnemonicParsing="false" style="-fx-background-color: #2A629A; -fx-background-radius: 50;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Meiryo UI Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="46.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Нет аккаунта? ">
+         <font>
+            <Font name="Meiryo UI Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#2a629a" layoutX="69.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toys" underline="true">
+         <font>
+            <Font name="Meiryo UI Bold Italic" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#ff7f3e" layoutX="133.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store">
+         <font>
+            <Font name="Meiryo UI Bold Italic" size="28.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
